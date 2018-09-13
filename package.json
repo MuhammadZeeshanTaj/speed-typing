@@ -1,0 +1,15 @@
+{
+  "name": "speed-typing-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d app"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://MuhammadZeeshanTaj.github.io/speed-typing",
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordBeater -SpeedTyping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- herder -->
+    <header>
+        <h1>
+            WordBeater.
+        </h1>
+    </header>
+    <!-- word beater starts here -->
+    <div id="main-section">
+        <div id="content">
+            <!-- selection of defeculty -->
+            <p id="select-words">Type the given word within <span class="seconds">
+                <input type="number" min="1" max="5" value="5" step="1" id="input-seconds">
+            </span> Seconds:</p>
+            
+            <!-- random word -->
+            <h1>
+                <span id="changing-word">
+                    hello
+                </span>
+            </h1>
+            
+            <!-- insertion of that random word -->
+            <input type="text" id="insert-word" class=""
+            placeholder="Start Typing...">
+
+
+            <!-- display either correct or game over -->
+            <p id="message" class=""></p>
+
+            <div class="time-score">
+                <!-- time decrements -->
+                <p id="time-left">Time Left: <span id="time">0</span></p>
+
+                <!-- total score -->
+                <p id="total-score">Score: <span id="score">0</span></p>
+                </div>
+            
+            <!-- game instructions -->
+            <div id="instructions">
+                <h3>instructions</h3>
+                <p>Type each Word in a selected amount of seconds. <br> To play again click on Text-input. Your score will also reset.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS goes here -->
+    <script src="js/script.js"></script>
+</body>
+</html>

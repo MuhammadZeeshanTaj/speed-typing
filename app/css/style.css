@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url('../image/typewriter.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    color: #eee;
+    font-family: 'Segoe UI', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: rgba(3, 16, 41, 0.63);
+    text-align: center;
+    padding: 0rem 0.1rem;
+    font-size: 1.3rem;
+    animation-name: header;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: -100px;
+}
+@keyframes header{
+    0%{
+        opacity: 0;
+        top: -100px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+/* main-section */
+#main-section{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+/* inner contents */
+#content{
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgba(3, 16, 41, 0.63);
+    color: #eee;
+    border: 2px solid #eee;
+    border-radius: 10px;
+}
+/* selection of defeculty */
+#content #select-words{
+    font-size: 1.2rem;
+    line-height: 1rem;
+    padding-bottom: 0.5rem;
+}
+input#input-seconds{
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 0.3rem 0.5rem;
+    background-color:rgba(255, 255, 255, 0.836);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* random word */
+#content h1{
+    font-weight: lighter;
+    font-size: 5.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* word insertion */
+#content #insert-word{
+    border: none;
+    outline: none;
+    width: 80%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    background-color: rgba(255, 255, 255, 0.87);
+    margin: 0.5rem 1rem;
+}
+#content #insert-word.right{
+    border: 5px solid rgb(55, 185, 131);
+}
+#content #insert-word.wrong{
+    border: 5px solid #b92323;
+}
+/* right or wrong message */
+#content #message.right{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: rgb(55, 185, 131);
+    display: inline-block;
+}
+
+#content #message.wrong{
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background-color: #b92323;
+    display: inline-block;
+}
+
+/* time left or timestemp */
+#content .time-score{
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+.time-score #time-left, .time-score #total-score{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.time-score #time-left span{
+    color: #b92323;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3rem;
+
+}
+/* total score */
+.time-score #total-score span{
+    color: rgb(55, 185, 131);
+    font-weight: bold;
+    display: inline-block;
+    font-size: 3rem;
+}
+/* instructions  */
+#instructions{
+    margin-top: 2rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 0.8rem 1rem;
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #333;
+}
